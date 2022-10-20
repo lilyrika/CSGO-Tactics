@@ -1,0 +1,25 @@
+T: mid, right T
+mid: left, quad, short
+quad: mid, left, short
+short: quad, pit, CT
+balcony: CT, site, long, graveyard, cemetary
+pit: CT, cemetary, graveyard, long, site
+cemetary: pit, balcony, short, quad
+graveyard: pit, balcony, CT, site, short
+CT: long, pit, site, balc
+site: its complicated
+long: arch, left, ct, pit, balc
+cubby: long, CT, arch
+library 1: long, arch, left, library 2
+library 2: library 1
+arch: long, left, ninja
+arch cubby: arch, long, left
+ninja: left, arch, long, library 1
+left: arch, long, library 1, mid, quad
+boiler: mid, quad, short
+aps: boiler, stairs
+room: aps, boiler, T
+boost: aps, balcony
+stairs: aps
+T: mid, room, aps, right T
+right T: stairs, T
